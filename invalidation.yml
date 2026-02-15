@@ -1,0 +1,7 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo Creating Invalidation...
+      - aws cloudfront create-invalidation --distribution-id E2ZW733YHJJGTX --paths "/*"
